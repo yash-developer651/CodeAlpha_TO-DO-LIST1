@@ -92,3 +92,49 @@ h1 {
 .delete-btn:hover {
     color: #c9302c;
 }
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 10px; /* small padding on mobile */
+  }
+
+  .container {
+    padding: 15px 20px; /* smaller container padding */
+    width: 100%;
+    max-width: 100%; /* use full screen width */
+    box-shadow: none; /* optional: remove shadow on small screens */
+  }
+
+  h1 {
+    font-size: 24px; /* smaller heading */
+  }
+
+  #task-input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  #add-task-btn {
+    padding: 8px 10px;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+
+  .task-text {
+    font-size: 16px;
+  }
+
+  .edit-btn, .delete-btn {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+
+  .input-container {
+    flex-direction: column;
+  }
+
+  #add-task-btn {
+    margin-left: 0;
+    margin-top: 10px; /* stack button below input */
+    width: 100%;
+  }
+}
